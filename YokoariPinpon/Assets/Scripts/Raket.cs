@@ -115,7 +115,6 @@ public class Raket : MonoBehaviour {
 					if(player_flg ) {
 						//ラリーのスコアを足し、スコアボードをめくる
 						GM.raricnt++;
-						Debug.Log (GM.raricnt);
 						Mekuru.sta (false);
 						//クリア処理
 						if(GM.raricnt >= 10) {
@@ -161,7 +160,6 @@ public class Raket : MonoBehaviour {
 
 				//着地するまでの処理回数を計算
 				float cnt = landingCount();
-				Debug.Log (cnt);
 
 				//目標地点へ到達する為の移動量に、振った力分の補正をかけた移動量をボールに与える
 				Ball.vect = new Vector3(sa/(cnt * 7) *(movePower.x),movePower.y*0.1f,co * sa/(cnt * 7)*(movePower.z/0.4f));
@@ -175,7 +173,6 @@ public class Raket : MonoBehaviour {
 				//ボールに当たった状態にする
 				ball_hitflg = true;
 			}
-			Ball.cnt = 0;
 		}
 		//前座標変数の更新
 		pos_before = transform.position;
@@ -371,7 +368,6 @@ public class Raket : MonoBehaviour {
 			}else {
 				mP.y -= 1.5f;
 				mP.z = 1.2f;
-				//Debug.Log (mP);
 			}
 		}
 		mP.x = mP.x* 0.5f;

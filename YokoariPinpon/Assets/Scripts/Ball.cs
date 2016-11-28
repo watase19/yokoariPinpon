@@ -15,9 +15,7 @@ using System.Collections;
 public class Ball : MonoBehaviour {
 
 	public static Vector3 vect;						//移動量
-	public static float gra;						//重力
 	public static bool raketHitFlag;				//ラケットに当たったかどうか
-	public static float cnt;							//デバッグ用*****************************
 	public static int raricnt;						//ラリーを行えた回数
 
 	public GameObject[] zanzou = new GameObject[4];	//残像
@@ -55,7 +53,6 @@ public class Ball : MonoBehaviour {
 		//初期化
 		tim = 0;
 		auto ();
-		cnt = 0;
 		pos = transform.position;
 		for (int i = 0; i < zanzounum; i++) {
 			zanzoupos[i] = pos;
@@ -95,7 +92,6 @@ public class Ball : MonoBehaviour {
 			}
 			//台に当たった時
 			if (hit (dai.transform.position, dai.transform.localScale)) {
-				Debug.Log(gra);
 				//台に当たった時の音を流す
 				audioSource.PlayOneShot (daihansha, 0.3f);
 
@@ -115,8 +111,6 @@ public class Ball : MonoBehaviour {
 
 				//バウンドした陣地を確認し,2回バウンドしたらSEを流し、スコアを足してからサーブへ
 				if (pos.z > dai.transform.position.z) {
-
-					//Debug.Log ("ballcnt:" + cnt + "gra;" + gra);
 					if (GM.bounds == false) {
 						audioSource.PlayOneShot (pluSco, 0.3f);
 						GM.plscore ++;
@@ -138,18 +132,11 @@ public class Ball : MonoBehaviour {
 						GM.bounds = true;
 					}
 				}
-
-				//重力を初期化
-				gra = 0;
-				cnt = 0;
 			} else {
 
 				//空中にいるなら重力を足す
 				hif = false;
-				gra += Time.deltaTime;
 				vect.y -= Time.deltaTime * 9.8f / 30;
-				//gra += 0.00008f;
-				//
 			}
 			//ネットに当たった移動量を0に
 			if (hit (net.transform.position, net.transform.localScale)) {
@@ -230,8 +217,6 @@ public class Ball : MonoBehaviour {
 		pos = new Vector3 (0, 4, 6);
 		//vect = new Vector3 (0, 0, 0);
 		vect = new Vector3 (0, 0.4f / 2, -0.0375f * 2);
-		gra = 0;
-		cnt = 0;
 		sta = 1;
 		
 		fallf = false;
