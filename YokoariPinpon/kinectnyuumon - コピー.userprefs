@@ -1,0 +1,20 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Raket.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Ball.cs" Line="9" Column="23" />
+      <File FileName="Assets\Scripts\Raket.cs" Line="66" Column="15" />
+      <File FileName="Assets\Scripts\GM.cs" Line="23" Column="1" />
+      <File FileName="Assets\Scripts\TitleM.cs" Line="8" Column="29" />
+      <File FileName="Assets\Scripts\BallTitle.cs" Line="39" Column="10" />
+      <File FileName="Assets\Scripts\ModeSelect.cs" Line="78" Column="2" />
+      <File FileName="Assets\Scripts\RaketTitle.cs" Line="11" Column="24" />
+      <File FileName="Assets\Scripts\View.cs" Line="20" Column="2" />
+      <File FileName="Assets\Scripts\Mekuru.cs" Line="12" Column="43" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

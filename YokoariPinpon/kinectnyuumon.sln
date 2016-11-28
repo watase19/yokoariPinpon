@@ -1,0 +1,52 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{A3FCB933-3AAF-2334-93CB-23DE31E54580}") = "kinectnyuumon", "Assembly-CSharp-firstpass.csproj", "{D2E713D1-ADFF-99E0-3829-6473DF127124}"
+EndProject
+Project("{A3FCB933-3AAF-2334-93CB-23DE31E54580}") = "kinectnyuumon", "Assembly-CSharp.csproj", "{5F654C08-C6FC-2710-FF1C-89227767E3D8}"
+EndProject
+Project("{A3FCB933-3AAF-2334-93CB-23DE31E54580}") = "kinectnyuumon", "Assembly-CSharp-Editor-firstpass.csproj", "{BD7D5F6D-0B1D-E238-EFCA-C90E0CDB593F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2E713D1-ADFF-99E0-3829-6473DF127124}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2E713D1-ADFF-99E0-3829-6473DF127124}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2E713D1-ADFF-99E0-3829-6473DF127124}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2E713D1-ADFF-99E0-3829-6473DF127124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F654C08-C6FC-2710-FF1C-89227767E3D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F654C08-C6FC-2710-FF1C-89227767E3D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F654C08-C6FC-2710-FF1C-89227767E3D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F654C08-C6FC-2710-FF1C-89227767E3D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD7D5F6D-0B1D-E238-EFCA-C90E0CDB593F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD7D5F6D-0B1D-E238-EFCA-C90E0CDB593F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD7D5F6D-0B1D-E238-EFCA-C90E0CDB593F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD7D5F6D-0B1D-E238-EFCA-C90E0CDB593F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+																																																																		GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.inheritsSet = null
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.inheritsSet = Mono
+		$2.inheritsScope = text/x-csharp
+		$2.scope = text/x-csharp
+		$0.TextStylePolicy = $3
+		$3.FileWidth = 120
+		$3.TabWidth = 4
+		$3.IndentWidth = 4
+		$3.EolMarker = Unix
+		$3.inheritsSet = Mono
+		$3.inheritsScope = text/plain
+		$3.scope = text/plain
+	EndGlobalSection
+
+EndGlobal
